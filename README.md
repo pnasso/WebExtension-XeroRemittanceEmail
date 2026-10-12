@@ -21,11 +21,23 @@ in one picker so you can choose which address(es) to use in a single step.
 
 No data leaves the browser.
 
-## Install (unpacked)
+## Install
 
-1. `chrome://extensions` → enable **Developer mode**.
-2. **Load unpacked** → select this folder.
-3. Open a batch payment in Xero → **Send Remittance**.
+1. Download the latest zip from the
+   [Releases page](https://github.com/pnasso/WebExtension-XeroRemittanceEmail/releases/latest).
+2. Unzip it somewhere permanent (e.g. `~/Documents/ChromeExtensions/xero-remittance-email-picker`).
+   Chrome loads the extension from this folder, so don't delete or move it later.
+3. Open `chrome://extensions`, turn on **Developer mode** (top right).
+4. Click **Load unpacked** and select the unzipped folder.
+5. Open a batch payment in Xero → **Send Remittance**. The picker appears
+   automatically when any supplier has more than one address; the
+   **Choose emails…** button in the dialog reopens it.
+
+Chrome will show a "Disable developer mode extensions" notice on startup —
+that's expected for extensions installed this way; just dismiss it.
+
+**Updating:** download the new zip, replace the folder contents, then click
+the ↻ reload icon on the extension's card at `chrome://extensions`.
 
 ## Files
 
