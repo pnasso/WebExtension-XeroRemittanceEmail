@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Xero Remittance Email Picker",
+  "version": "0.1.0",
+  "description": "When sending remittance advice in Xero, pick which supplier email(s) to use in one step instead of editing each comma-separated list.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://go.xero.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://go.xero.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
